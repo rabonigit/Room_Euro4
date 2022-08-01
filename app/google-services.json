@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "261945890605",
+    "firebase_url": "https://sentpojemniki-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sentpojemniki",
+    "storage_bucket": "sentpojemniki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261945890605:android:d32afd886d41e3581b25a4",
+        "android_client_info": {
+          "package_name": "robac.pl.room_euro4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261945890605-fbkn4jq5g77i5vtatjrc1fdnml0lp4dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9CLMdspDqIFa4QgKIkFW-zyyvJJwhpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261945890605-fbkn4jq5g77i5vtatjrc1fdnml0lp4dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

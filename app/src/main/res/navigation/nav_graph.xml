@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="robac.pl.room_euro4.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_enter_anim"
+
+            />
+        <action
+            android:id="@+id/action_FirstFragment_to_scanerQrCodeFragment"
+            app:destination="@id/scanerQrCodeFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_FirstFragment_to_sentFragment"
+            app:destination="@id/sentFragment"
+            app:popUpTo="@id/sentFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="robac.pl.room_euro4.QrCodeFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_QrCodeFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_QrCodeFragment_to_CommentFragment"
+            app:destination="@id/comment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+
+            android:name="messageUpdate"
+            app:argType="robac.pl.room_euro4.model.Message" />
+        <argument
+            android:name="domyslna"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/comment"
+        android:name="robac.pl.room_euro4.KomentarzFragment"
+        android:label="fragment_komentarz"
+        tools:layout="@layout/fragment_komentarz">
+
+        <action
+        android:id="@+id/action_CommentFragment_to_SecondFragment"
+        app:destination="@id/SecondFragment"/>
+        <argument
+            android:name="message"
+            app:argType="robac.pl.room_euro4.model.Message" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanerQrCodeFragment"
+        android:name="robac.pl.room_euro4.ScanerQrCodeFragment"
+        android:label="fragment_scaner_qr_code"
+        tools:layout="@layout/fragment_scaner_qr_code" >
+        <action
+            android:id="@+id/action_scanerQrCodeFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/sentFragment"
+        android:name="robac.pl.room_euro4.SentFragment"
+        android:label="Lista_aktywnych_Sentów"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_sentFragment_to_sentInfoFragment"
+            app:destination="@id/sentInfoFragment"
+            app:popUpTo="@id/sentInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/sentInfoFragment"
+        android:name="robac.pl.room_euro4.sentInfoFragment"
+        android:label="Szczegóły Sent"
+        tools:layout="@layout/fragment_sent_info" >
+        <argument
+            android:name="szczegolySent"
+            app:argType="robac.pl.room_euro4.model.InfoSent" />
+    </fragment>
+</navigation>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Room_euro4</string>
+    <string name="action_settings">Autoryzacja Telefonu</string>
+    <string name="action_settings2">Settings2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Start pojemniki</string>
+    <string name="second_fragment_label">Lista obsłużonych</string>
+    <string name="next">Next</string>
+    <string name="sent">Lista Sent</string>
+    <string name="previous">Previous</string>
+    <string name="scanned_data">Scanned Data</string>
+    <string name="info_telefon">Telefon inicjalizacja</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="dialog_title">Brak uprawnień</string>
+    <string name="dialog_message">Niestety, nie zostały nadane wszystkie wymagane uprawnienia dla aplikacji.</string>
+    <string name="dialog_button">Zamknij</string>
+    <string name="rank">Rank</string>
+    <string name="rank_1">#1</string>
+    <string name="skanuj">Skanuj pojemniki</string>
+    <string name="lista_pojemnikow">Lista pojemników</string>
+    <string name="wins">Wins</string>
+    <string name="wins_amount">42</string>
+    <string name="losses">Losses</string>
+    <string name="losses_amount">03</string>
+    <string name="info_ok">Zapisz</string>
+    <string name="welcome">Welcome!</string>
+    <string name="about_description">This sample showcases navigation using a Bottom Navigation
+    View. The state and back stack of the three different screens are persisted.
+    </string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profile_name_1">Ali Connors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kom">komentarz</string>
+    <string name="answer_1">22</string>
+    <string name="answer_2">75</string>
+    <string name="answer_3">42</string>
+    <string name="answer_4">10</string>
+    <string name="komentarz_pojemnik">Stan pojemnika</string>
+    <string name="info_anuluj">Anuluj</string>
+    <string name="intent_message">intent_message</string>
+    <string name="fragment_selector">Fragment Selector</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
